@@ -24,5 +24,5 @@ jobs:
 
       - name: Run Puppeteer Script
         env:
-          TARGET_URL: ${{ secrets.TARGET_URL }} 
+          TARGET_URL: ${{ vars.TARGET_URL }} 
         run: node index.js
