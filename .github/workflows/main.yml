@@ -2,9 +2,9 @@ name: Run Puppeteer Script
 
 on:
   schedule:
-    # ทุกวันเวลา 01:00 (เวลาไทย = UTC 18:00 ของวันก่อนหน้า)
+    # Every day at 01:00 (Thai time = UTC 18:00 previous day)
     - cron: "0 18 * * *"
-  workflow_dispatch: # เผื่อกด run เองได้จากหน้า GitHub Actions
+  workflow_dispatch: # Allows manual triggering from the Actions tab
 
 jobs:
   run-script:
@@ -23,4 +23,6 @@ jobs:
         run: npm install
 
       - name: Run Puppeteer Script
+        env:
+          TARGET_URL: ${{ secrets.TARGET_URL }} 
         run: node index.js
