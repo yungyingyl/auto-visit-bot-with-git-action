@@ -3,7 +3,7 @@ name: Run Puppeteer Script
 on:
   schedule:
     # Every day at 01:00 (Thai time = UTC 18:00 previous day)
-    - cron: "13 7 * * *"
+    - cron: "30 0 * * *"
   workflow_dispatch: # Allows manual triggering from the Actions tab
 
 jobs:
