@@ -3,7 +3,9 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 
 puppeteer.use(StealthPlugin());
 
-const targetUrl = process.env.TARGET_URL;
+// const targetUrl = process.env.TARGET_URL;
+// const targetUrl = process.env.TARGET_URL;
+const targetUrl = "https://mynovel.co/novel/GMjNFX4Xka71W0LmwrpMLlh5";
 const viewCount = 4000;
 const visitDuration = 3200;
 
