@@ -5,8 +5,8 @@ puppeteer.use(StealthPlugin());
 
 // const targetUrl = process.env.TARGET_URL;
 // const targetUrl = process.env.TARGET_URL;
-const targetUrl = "https://mynovel.co/novel/ElPm1meawiEnzIAPTDmUkcwj";
-const viewCount = 2000;
+const targetUrl = "https://mynovel.co/novel/jalvKqbaHB3XbqiqDMZrdQPo";
+const viewCount = 1700;
 const visitDuration = 3200;
 
 const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
